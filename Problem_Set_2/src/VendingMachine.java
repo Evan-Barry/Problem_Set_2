@@ -1,5 +1,3 @@
-import jdk.nashorn.internal.scripts.JO;
-
 import javax.swing.*;
 
 public class VendingMachine {
@@ -40,8 +38,6 @@ public class VendingMachine {
 
     public void tokenEntered()
     {
-        Object[] fillUpOption = {"Fill Up"};
-
         if(getNumOfCans() > 0)
         {
             setNumOfTokens(getNumOfTokens()+1);
